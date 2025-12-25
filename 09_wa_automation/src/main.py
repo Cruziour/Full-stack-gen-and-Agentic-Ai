@@ -6,11 +6,11 @@ from datetime import datetime
 
 # Contact list path 
 EXCEL_FILE = 'contact.xlsx'
-SCHEDULED_TIME = "12:33" 
+SCHEDULED_TIME = "19:13" 
 
 def send_whatsapp_via_app(phone, name):
     try:
-        message = f"Hello {name}, this is whatsapp auto message"
+        message = f"This is auto generated message using python."
 
         # Open WhatsApp App 
         pyautogui.press('win')
