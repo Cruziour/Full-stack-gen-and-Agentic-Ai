@@ -6,11 +6,20 @@ from datetime import datetime
 
 # Contact list path 
 EXCEL_FILE = 'contact.xlsx'
-SCHEDULED_TIME = "19:13" 
+SCHEDULED_TIME = "00:01"  # 24-hour format
 
 def send_whatsapp_via_app(phone, name):
     try:
-        message = f"This is auto generated message using python."
+        # message = f"The new year arrives quietly, but it carries fresh hope.May it give you clarity where there was confusion,calm where there was chaos,and joy in the simple moments that truly matter.Thank you for being part of my life.Wishing you a year filled with purpose and peace.Happy New Year."
+        message = (
+    "As the new year begins, it brings with it renewed hope and fresh possibilities. "
+    "May it offer clarity where there was uncertainty, "
+    "calm in place of chaos, "
+    "and joy in the moments that truly matter. "
+    "Thank you for being a valued part of my journey. "
+    "Wishing you a year filled with purpose, growth, and peace. "
+    f"Happy New Year, {name}....")
+
 
         # Open WhatsApp App 
         pyautogui.press('win')
